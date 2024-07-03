@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Viewer = () => {
+const Viewer = ({ count }) => {
   return (
     <div>
       <div>현재카운트: </div>
-      <H1>0</H1>
+      <H1>{count}</H1>
     </div>
   );
 };

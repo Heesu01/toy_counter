@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const Controller = () => {
+const Controller = ({ handleSetCount }) => {
   return (
     <Div>
-      <Button>-1</Button>
-      <Button>-10</Button>
-      <Button>-100</Button>
-      <Button>+100</Button>
-      <Button>+10</Button>
-      <Button>+1</Button>
+      <Button onClick={() => handleSetCount(-1)}>-1</Button>
+      <Button onClick={() => handleSetCount(-10)}>-10</Button>
+      <Button onClick={() => handleSetCount(-100)}>-100</Button>
+      <Button onClick={() => handleSetCount(+100)}>+100</Button>
+      <Button onClick={() => handleSetCount(+10)}>+10</Button>
+      <Button onClick={() => handleSetCount(+1)}>+1</Button>
     </Div>
   );
 };
